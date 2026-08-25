@@ -1,0 +1,137 @@
+html_content = """<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es GitHub?</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-color: #c9d1d9;
+            --heading-color: #ffffff;
+            --accent-color: #58a6ff;
+            --green-accent: #238636;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.5rem;
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: rgba(110, 118, 129, 0.4);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #f0f6fc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>¿Qué es GitHub?</h1>
+            <p class="subtitle">La plataforma de desarrollo colaborativo más grande del mundo</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Concepto Principal</h2>
+                <p><strong>GitHub</strong> es una plataforma basada en la nube que permite a los desarrolladores almacenar, gestionar y compartir su código fuente. Utiliza el sistema de control de versiones <strong>Git</strong> para rastrear todos los cambios realizados en un proyecto.</p>
+            </section>
+
+            <section class="card">
+                <h2>Diferencia entre Git y GitHub</h2>
+                <ul>
+                    <li><strong>Git:</strong> Es la herramienta de líneas de comandos instalada en tu computadora local que rastrea el historial de cambios de tus archivos.</li>
+                    <li><strong>GitHub:</strong> Es el servicio web en la nube donde subes la copia de tu repositorio de Git para trabajar en equipo, respaldar tu código o compartirlo públicamente.</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Funciones Clave</h2>
+                <ul>
+                    <li><strong>Repositorios (Repositories):</strong> Carpetas donde se almacena el código de un proyecto junto con su historial.</li>
+                    <li><strong>Commits:</strong> Puntos de guardado que registran modificaciones específicas en los archivos.</li>
+                    <li><strong>Ramas (Branches):</strong> Espacios de trabajo independientes para probar nuevas funciones sin alterar el código principal (<code>main</code>).</li>
+                    <li><strong>Pull Requests (PR):</strong> Propuestas para integrar cambios de una rama hacia otra, permitiendo la revisión de código entre compañeros.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Página creada para aprender los conceptos básicos de Git y GitHub.</p>
+        </footer>
+    </div>
+</body>
+</html>
+"""
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("Archivo index.html generado correctamente")
